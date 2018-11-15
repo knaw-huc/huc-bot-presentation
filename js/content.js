@@ -1,10 +1,18 @@
 var content=[
   {
-    "timecode": 5,
-    "textToSpeech": "Hi, I'm a bot. Nice to meet you. Is everybody happy. Put you're hands up in the air. Everybody say oho!"
+    "timecode": 2,
+    "textToSpeech": "Hi, I'm Hugbot."
+  },
+  {
+    "timecode": 6,
+    "textToSpeech": "Go ahead punk, make my day. Go ahead punk, make my day too."
   },
   {
     "timecode": 10,
-    "textToSpeech": "This is text 2"
+    "textToSpeech": "I'll be back. Someday."
+  },
+  {
+    "timecode": 14,
+    "textToSpeech": "bla bla bla bla."
   }
 ]

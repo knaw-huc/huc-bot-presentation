@@ -4,15 +4,7 @@ var content=[
     "textToSpeech": "Hi, I'm Hugbot."
   },
   {
-    "timecode": 6,
-    "textToSpeech": "Go ahead punk, make my day. Go ahead punk, make my day too."
-  },
-  {
-    "timecode": 10,
-    "textToSpeech": "I'll be back. Someday."
-  },
-  {
     "timecode": 14,
-    "textToSpeech": "bla bla bla bla."
+    "textToSpeech": "The safari proved a singular travel experience that stayed with me long after I returned home. Of course, the obligatory wildlife photos were shared with friends and family, inclusive of clever captions decrying their relevant animal groupings. But I still wanted to know if these collective nouns were simply a gimmick employed by safari guides to engage their guests, or if they had actual roots in the English language.  "
   }
 ]

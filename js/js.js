@@ -13,12 +13,14 @@
 //   }
 // }
 
-var countArr = 1;
+var countArr = 0;
 var countDots = 0;
 
 function handleSpeech() {
   var text2read = content[countArr].textToSpeech;
   countDots = text2read.split(".").length-1;
+  countDots = countDots+text2read.split(",").length-1;
+  document.getElementById("id2").innerHTML = 'set dots: '+countDots;
   speak(text2read);
 }
 handleSpeech();
@@ -31,19 +33,21 @@ function toDisplay(txt) {
 }
 
 function speak(txt) {
-  responsiveVoice.speak(txt);
-  responsiveVoice.speak(txt, "UK English female", {onstart: StartCallback, onend: EndCallback});
+  //responsiveVoice.speak(txt);
+  responsiveVoice.speak(txt, "UK English Female", {onstart: StartCallback, onend: EndCallback});
 }
 
 function StartCallback() {
-  document.getElementById("id1").innerHTML = "Speaking";
+  document.getElementById("id3").innerHTML = '<img src="images/talking.gif" alt="">';
 }
 
 function EndCallback() {
-  document.getElementById("id1").innerHTML = "";
+
+  document.getElementById("id3").innerHTML = '<img src="images/silent.gif" alt="">';
+  document.getElementById("id2").innerHTML = 'dots: '+countDots;
   countDots=countDots-1;
   if (countDots==1) {
     countArr++;
-    setTimeout(handleSpeech, 2000);
+    setTimeout(handleSpeech, 1500);
   }
 }

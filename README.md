@@ -8,3 +8,4 @@ One can add text to the `js/content.js` file. Just add this block:
   "textToSpeech": "Your text here."
 }
 ```
+Run `index.html` in the browser.

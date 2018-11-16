@@ -8,6 +8,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: calc(100vh - 2rem);
   width: 100vw;
+}
+
+#id2{
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  font-family: sans-serif;
 }

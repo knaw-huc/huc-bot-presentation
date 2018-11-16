@@ -1,17 +1,20 @@
-// var timer = setInterval(timeEngine, 1000);
-// var count = 0;
-//
-// function timeEngine() {
-//   count+=1;
-//   document.getElementById("id2").innerHTML = count;
-//   var needle = count;
-//
-//   for (var i = 0; i < content.length; i++){
-//     if (content[i].timecode == needle){
-//       speak(content[i].textToSpeech)
-//     }
-//   }
-// }
+var timer = setInterval(timeEngine, 1000);
+var count = 0;
+
+function timeEngine() {
+  count+=1;
+  var minutes = Math.floor(count / 60);
+
+  var seconds = count - minutes * 60;
+  document.getElementById("id2").innerHTML = minutes+'.'+seconds;
+  // var needle = count;
+
+  // for (var i = 0; i < content.length; i++){
+  //   if (content[i].timecode == needle){
+  //     speak(content[i].textToSpeech)
+  //   }
+  // }
+}
 
 var countArr = 0;
 var countDots = 0;
@@ -20,7 +23,6 @@ function handleSpeech() {
   var text2read = content[countArr].textToSpeech;
   countDots = text2read.split(".").length-1;
   countDots = countDots+text2read.split(",").length-1;
-  document.getElementById("id2").innerHTML = 'set dots: '+countDots;
   speak(text2read);
 }
 handleSpeech();
@@ -44,7 +46,6 @@ function StartCallback() {
 function EndCallback() {
 
   document.getElementById("id3").innerHTML = '<img src="images/silent.gif" alt="">';
-  document.getElementById("id2").innerHTML = 'dots: '+countDots;
   countDots=countDots-1;
   if (countDots==1) {
     countArr++;

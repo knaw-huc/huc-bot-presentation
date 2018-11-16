@@ -5,6 +5,6 @@ var content=[
   },
   {
     "timecode": 14,
-    "textToSpeech": "The safari proved a singular travel experience that stayed with me long after I returned home. Of course, the obligatory wildlife photos were shared with friends and family, inclusive of clever captions decrying their relevant animal groupings. But I still wanted to know if these collective nouns were simply a gimmick employed by safari guides to engage their guests, or if they had actual roots in the English language.  "
+    "textToSpeech": "On the back cover of their final issue was a photograph of an early morning country road, the kind you might find yourself hitchhiking on if you were so adventurous. Beneath it were the words: “Stay Hungry. Stay Foolish.” It was their farewell message as they signed off. Stay Hungry. Stay Foolish. And I have always wished that for myself. And now, as you graduate to begin anew, I wish that for you. Stay Hungry. Stay Foolish."
   }
 ]

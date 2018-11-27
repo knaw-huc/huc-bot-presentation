@@ -19,5 +19,20 @@
 }
 
 #theFace {
-  transform: translate(-50px, -50px);
+  transform: translate(-200px, -200px) ;
+  width: 300px;
+  height: 300px;
+}
+
+
+.lines {
+  stroke-width: 1px;
+  fill: none;
+  stroke: #03dbe8;
+}
+
+#maskCircle {
+  stroke: #03dbe8;
+  fill: #ddf279;
+  stroke-width: 2px;
 }

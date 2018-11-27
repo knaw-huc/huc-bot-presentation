@@ -10,20 +10,21 @@
 
       <defs>
         <clipPath id="clipPath">
-          <circle class="" cx="50%" cy="50%" r="30" />
+          <circle id="maskCircle" cx="50%" cy="50%" r="200"/>
       </clipPath>
 
-      <symbol id="face">
-        <rect x="0" y="0" width="100" height="100" style="stroke: none; fill: #edebdd;   "/>
-
+      <symbol id="face" >
+        <rect x="0" y="0" width="400" height="400" style="stroke: none; fill: #edebdd;   "/>
+        <path id="botEyes" class="lines" d="M0,208.2c56.42-13.88,65.43-27.24,111.82-27.64c44.1-0.37,40.89,10.31,74.47,12.56c54.48,3.64,56.92-17.68,94.54-10.99c29.21,5.2,70.31,22.96,119.28,22.51"/>
+        <path id="botMouth" class="lines" d="M400,263.69c-32.23,44.97-59.46,55.44-79.07,56c-49.23,1.39-72.47-16.45-109.96-14.62c-32.16,1.57-41.01,8.95-78.57,11.07c-33.11,1.87-94.8-10.83-131.82-32.17"/>
       </symbol>
 
       </defs>
 
 
-      <!-- <circle id="backCircle01" class="" cx="50%" cy="50%" r="30%"/> -->
-      <!-- <circle id="faceStroke" class="" cx="50%" cy="50%" r="10%"/> -->
-      <use xlink:href="#face" x="50%" y="50%" id="theFace"/>
+      <circle id="backCircle01" class="" cx="50%" cy="50%" r="30%"/>
+      <circle id="faceStroke" class="" cx="50%" cy="50%" r="10%"/>
+      <use xlink:href="#face" x="50%" y="50%" id="theFace"  />
     </svg>
 
   </body>

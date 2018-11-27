@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 23.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="face" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 300 300" style="enable-background:new 0 0 300 300;" xml:space="preserve">
+	 viewBox="0 0 400 400" style="enable-background:new 0 0 400 400;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:none;stroke:#000000;stroke-miterlimit:10;}
 </style>
-<path id="Mouth" class="st0" d="M300.41,210.05c-24.01,32.29-44.38,39.75-59.07,40.09c-36.88,0.85-54.34-12.07-82.42-10.86
-	c-24.09,1.03-30.7,6.32-58.83,7.73c-24.8,1.25-71.06-8.09-98.86-23.57"/>
-<circle id="head-circle" class="st0" cx="150.41" cy="150" r="150"/>
-<path id="Mouth_1_" class="st0" d="M-11.59,168.15c47.35-14.58,55.05-28.05,93.84-29.03c36.88-0.93,34.05,9.79,62.11,11.6
-	c45.5,2.95,47.82-18.39,79.18-12.18c24.35,4.82,58.5,22.04,99.44,20.97"/>
+<path id="Mouth" class="st0" d="M400,263.69c-32.23,44.97-59.46,55.44-79.07,56c-49.23,1.39-72.47-16.45-109.96-14.62
+	c-32.16,1.57-41.01,8.95-78.57,11.07c-33.11,1.87-94.8-10.83-131.82-32.17"/>
+<circle id="head-circle" class="st0" cx="200" cy="200" r="200"/>
+<path id="Mouth_1_" class="st0" d="M0,208.2c56.42-13.88,65.43-27.24,111.82-27.64c44.1-0.37,40.89,10.31,74.47,12.56
+	c54.48,3.64,56.92-17.68,94.54-10.99c29.21,5.2,70.31,22.96,119.28,22.51"/>
 </svg>

@@ -1,0 +1,29 @@
+<div id="searresults">
+  <div className="hc-label-li">
+    <div className="hc-label hc-list-item-primair">File</div>
+    <div className="hc-label">Type</div>
+    <div className="hc-label">User</div>
+    <div className="hc-label">Date</div>
+    <div className="hc-label"> </div>
+  </div>
+
+  <ul className="hc-list">
+    {#each files-sets}
+      <li>
+
+        <div className="hc-list-item-primair hc-tooltip-show">
+          <div className="itemSpread">
+            <strong>{file-name}</strong>
+            <div className="hc-tooltip"><a href="file-detail.html">View file</a></div>
+          </div>
+
+          <div className="smallGrey">{file-path}{file-name}</div>
+        </div>
+        <div className="hc-list-item-secun hc-tooltip-show">{file-type}</div>
+        <div className="hc-list-item-tertair hc-tooltip-show">{file-user}</div>
+        <div className="hc-list-item-tertair hc-tooltip-show">{file-date}</div>
+        <div className="hc-list-item-tertair"><button>Connect</button></div>
+      </li>
+    {/each}
+  </ul>
+</div>

@@ -1,0 +1,177 @@
+{
+  "name": "wp3-01",
+  "template": "form",
+  "title": "Form",
+  "files-item-comp": "list-item-file",
+  "files-sets": {{> list-files}},
+  "files-service": [
+    {
+      "service-name": "Service 1",
+      "service-provider": "Clariah"
+    },
+    {
+      "service-name": "Service 2",
+      "service-provider": "Meertens Instituut"
+    }
+  ],
+  "wizard-steps": [
+    {
+      "step-number": "1",
+      "step-tekst": "Select file",
+      "step-state": "current",
+      "step-link": "wp3-01.html"
+    },
+    {
+      "step-number": "2",
+      "step-tekst": "Select service",
+      "step-state": "",
+      "step-link": "wp3-02.html"
+    },
+    {
+      "step-number": "3",
+      "step-tekst": "Configurate service",
+      "step-state": "",
+      "step-link": "wp3-03.html"
+    },
+    {
+      "step-number": "4",
+      "step-tekst": "Deploy",
+      "step-state": "",
+      "step-link": "wp3-04.html"
+    }
+  ]
+},
+{
+  "name": "wp3-02",
+  "template": "form2",
+  "title": "Form",
+  "files-service": [
+    {
+      "service-name": "Service 1",
+      "service-provider": "Clariah"
+    },
+    {
+      "service-name": "Service 2",
+      "service-provider": "Meertens Instituut"
+    }
+  ],
+  "wizard-steps": [
+    {
+      "step-number": "1",
+      "step-tekst": "Select file",
+      "step-state": "done",
+      "step-link": "wp3-01.html"
+    },
+    {
+      "step-number": "2",
+      "step-tekst": "Select service",
+      "step-state": "current",
+      "step-link": "wp3-02.html"
+    },
+    {
+      "step-number": "3",
+      "step-tekst": "Configurate service",
+      "step-state": "",
+      "step-link": "wp3-03.html"
+    },
+    {
+      "step-number": "4",
+      "step-tekst": "Deploy",
+      "step-state": "",
+      "step-link": "wp3-04.html"
+    }
+  ]
+},
+{
+  "name": "wp3-03",
+  "template": "form3",
+  "title": "Form",
+  "wizard-steps": [
+    {
+      "step-number": "1",
+      "step-tekst": "Select file",
+      "step-state": "done",
+      "step-link": "wp3-01.html"
+    },
+    {
+      "step-number": "2",
+      "step-tekst": "Select service",
+      "step-state": "done",
+      "step-link": "wp3-02.html"
+    },
+    {
+      "step-number": "3",
+      "step-tekst": "Configurate service",
+      "step-state": "current",
+      "step-link": "wp3-03.html"
+    },
+    {
+      "step-number": "4",
+      "step-tekst": "Deploy",
+      "step-state": "",
+      "step-link": "wp3-04.html"
+    }
+  ]
+},
+{
+  "name": "wp3-04",
+  "template": "form4",
+  "title": "Form",
+  "wizard-steps": [
+    {
+      "step-number": "1",
+      "step-tekst": "Select file",
+      "step-state": "done",
+      "step-link": "wp3-01.html"
+    },
+    {
+      "step-number": "2",
+      "step-tekst": "Select service",
+      "step-state": "done",
+      "step-link": "wp3-02.html"
+    },
+    {
+      "step-number": "3",
+      "step-tekst": "Configurate service",
+      "step-state": "current",
+      "step-link": "wp3-03.html"
+    },
+    {
+      "step-number": "4",
+      "step-tekst": "Deploy",
+      "step-state": "",
+      "step-link": "wp3-04.html"
+    }
+  ]
+},
+{
+  "name": "wp3-file-detail",
+  "template": "file",
+  "title": "Detail",
+  "wizard-steps": [
+    {
+      "step-number": "1",
+      "step-tekst": "Select file",
+      "step-state": "current",
+      "step-link": "wp3-01.html"
+    },
+    {
+      "step-number": "2",
+      "step-tekst": "Select service",
+      "step-state": "",
+      "step-link": "wp3-02.html"
+    },
+    {
+      "step-number": "3",
+      "step-tekst": "Configurate service",
+      "step-state": "",
+      "step-link": "wp3-03.html"
+    },
+    {
+      "step-number": "4",
+      "step-tekst": "Deploy",
+      "step-state": "",
+      "step-link": "wp3-04.html"
+    }
+  ]
+}

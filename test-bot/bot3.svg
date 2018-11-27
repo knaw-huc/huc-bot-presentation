@@ -1,0 +1,48 @@
+<svg id="bot" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-6 {
+        fill: none;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-1 {
+        stroke: #feca7a;
+      }
+
+      .cls-2, .cls-4 {
+        stroke: #b5d675;
+      }
+
+      .cls-2, .cls-3 {
+        stroke-width: 2px;
+      }
+
+      .cls-3 {
+        stroke: #6dc392;
+      }
+
+      .cls-5 {
+        fill: #fff;
+      }
+
+      .cls-6 {
+        stroke: #7ac143;
+      }
+    </style>
+  </defs>
+  <title>Artboard 6</title>
+  <path id="mth1" class="cls-1" d="M-19.27,74.6c5.69-.49,24.32-24.94,68.87-17.33,29.63,5.06,49,12.32,49,12.32"/>
+  <path id="mth2" class="cls-1" d="M-9.39,90c34.22,1.15,42.44-5.43,69.92-3,31.73,2.8,48.07,1,48.07,1"/>
+  <path id="eye2" class="cls-2" d="M.72,69.59c27.2,12.32,48.07-13.49,61.58-22,19-11.91,46.3-2.68,46.3-2.68"/>
+  <path id="eye1" class="cls-3" d="M-8.7,28.2c14,8,25.84,11.92,48.38,7.52,57.55-11.26,75.6,31.34,75.6,31.34"/>
+  <path id="lne2" class="cls-4" d="M-5.83,23.93C16.61,12.65,46.64,4.85,67.94,17c22.06,12.53,47.64,0,47.64,0"/>
+  <path id="lne1" class="cls-1" d="M-8.7,28.2C22.78,57.27,59.22,4.32,90,29.49c23.84,19.49,19.28-3.32,19.28-3.32"/>
+  <g id="Mask">
+    <path class="cls-5" d="M-.17,50v50h50A50,50,0,0,1-.17,50Z"/>
+    <path class="cls-5" d="M49.83,0h-50V50A50,50,0,0,1,49.83,0Z"/>
+    <path class="cls-5" d="M49.83,0a50,50,0,0,1,50,50V0Z"/>
+    <path class="cls-5" d="M49.83,100h50V50A50,50,0,0,1,49.83,100Z"/>
+  </g>
+  <circle id="Border" class="cls-6" cx="49.83" cy="50" r="50"/>
+</svg>

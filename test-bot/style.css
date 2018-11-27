@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+}
+
+.mid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+#bot {
+
+}
+
+.lne2 {
+  stroke: #53be46;
+  stroke-width: 2px;
+  fill: #e1e947;
+
+}
+
+.cls-5{
+  fill: #b8edea;
+}
+
+.cls-6{
+  stroke: #d63b69;
+  stroke-width: 2px;
+}

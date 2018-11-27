@@ -1,0 +1,19 @@
+<div className="hc-label-li">
+  <div className="hc-label hc-list-item-primair">Service</div>
+  <div className="hc-label">Provider</div>
+  <div className="hc-label"> </div>
+</div>
+
+<ul className="hc-list m3">
+  {#each files-service}
+    <li>
+      <div className="hc-list-item-primair hc-tooltip-show">
+        <div className="itemSpread">
+          <strong>{service-name}</strong>
+        </div>
+      </div>
+      <div className="hc-list-item-secun hc-tooltip-show">{service-provider}</div>
+      <div className="hc-list-item-tertair"><button>Select service</button></div>
+    </li>
+  {/each}
+</ul>

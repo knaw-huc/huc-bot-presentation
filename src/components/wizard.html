@@ -1,0 +1,10 @@
+<div class="wizard mt5 m5">
+
+  {{#each wizard-steps}}
+    <a href="{{step-link}}" class="wizard__step wizard__step--{{step-state}}">
+      <div class="wizard__line">&nbsp;</div>
+      <div class="wizard__step-number-dot">{{step-number}}</div>
+      <div class="wizard__text">{{step-tekst}}</div>
+    </a>
+  {{/each}}
+</div>

@@ -1,0 +1,15 @@
+<div id="searresults">
+  <div class="hc-label-li">
+    <div class="hc-label hc-list-item-primair">File</div>
+    <div class="hc-label">Type</div>
+    <div class="hc-label">User</div>
+    <div class="hc-label">Date</div>
+    <div class="hc-label"> </div>
+  </div>
+
+  <ul class="hc-list">
+    {{#each files-sets}}
+      {{> list-item-file }}
+    {{/each}}
+  </ul>
+</div>

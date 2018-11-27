@@ -1,0 +1,10 @@
+{
+  "siteName": "Site",
+  "pages": [
+    {
+      "name": "index",
+      "template": "basic",
+      "title": "Focus"
+    }
+  ]
+  }

@@ -1,0 +1,40 @@
+
+<div class="hc-form-item m1 mt15">
+  <!-- component label -->
+  <div class="hc-label">Coordinats</div>
+
+  {{> form-repeat-list}}
+
+  <div class="hc-form-item-row">
+
+      <!-- component row -->
+      <div class="hc-form-item-element-container">
+        <div class="hc-form-split hc-add-another">
+
+        <!-- first input-->
+        <div class="hc-form-item-element hc-danger">
+          <label for="latitude">Latitude</label>
+          <div class="hc-input-row">
+            <input type="text" id="latitude" class="hc-danger">
+          </div>
+          <div class="hc-message">Not valid</div>
+        </div>
+
+        <!-- second input-->
+        <div class="hc-form-item-element">
+          <label for="latitude">Longitude</label>
+          <div class="hc-input-row">
+            <input type="text" id="latitude">
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+      <!-- side info and buttons-->
+    <div class="hc-form-item-element-extra">
+        <button type="button" name="button" class="hc-add-another-button hc-small">Add another</button>
+    </div>
+  </div>
+</div>
+<div class="hc-message"></div>

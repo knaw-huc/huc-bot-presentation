@@ -10,7 +10,7 @@
 
       <defs>
         <clipPath id="clipPath">
-          <circle id="maskCircle" cx="50%" cy="50%" r="200"/>
+          <circle id="maskCircle" cx="0" cy="0" r="200"/>
       </clipPath>
 
       <symbol id="face" >
@@ -24,7 +24,10 @@
 
       <circle id="backCircle01" class="" cx="50%" cy="50%" r="30%"/>
       <circle id="faceStroke" class="" cx="50%" cy="50%" r="10%"/>
-      <use xlink:href="#face" x="50%" y="50%" id="theFace"  />
+
+      </g style="mask: url(#clipPath);">
+        <use xlink:href="#face" x="50%" y="50%" id="theFace"  />
+      <g>
     </svg>
 
   </body>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>PocBot</title>
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="mid">
+      <svg id="bot" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="200" height="200">
+        <defs>
+          <style>
+
+
+            .cls-1, .cls-2, .cls-3, .cls-4, .cls-6 {
+              fill: none;
+              stroke-miterlimit: 10;
+              transition: 1s;
+            }
+
+
+            .cls-1 {
+              stroke: #feca7a;
+              transition: 1s;
+            }
+
+            .cls-7 {
+              stroke: #feca7a;
+              transition: .7s;
+              fill: none;
+            }
+
+            .cls-2, .cls-4 {
+              stroke: #b5d675;
+              transition: 1.5s;
+            }
+
+            .cls-2, .cls-3 {
+              stroke-width: 2px;
+            }
+
+            .cls-3 {
+              stroke: #6dc392;
+              transition: 1.3s;
+            }
+
+            .cls-5 {
+              fill: #fff;
+              transition: 1.3s;
+            }
+
+            .cls-6 {
+              stroke: #7ac143;
+              stroke-width: 2px;
+              stroke-dasharray: 03;
+              animation: dash 40s linear;
+              stroke-linecap: round;
+            }
+
+            svg path {
+            transition: 0.9s;
+          }
+
+
+
+          @keyframes dash {
+            to {
+              stroke-dashoffset: 1000;
+            }
+          }
+          </style>
+        </defs>
+
+        <path id="mth1" class="cls-7" d="M-19.1,74C-13.47,74.11,25,88.78,67,72.26c32.32-12.7,31.72-2.67,31.72-2.67"/>
+        <path id="mth2" class="cls-1" d="M-9.27,90c50.78,5,35.59,11,69.92-3,29.5-12,48.06,1,48.06,1"/>
+        <path id="eye2" class="cls-2" d="M.84,69.59C56.66,84.58,73,62.69,87.36,50c22.41-19.82,21.35-5,21.35-5"/>
+        <path id="eye1" class="cls-3" d="M-8.58,28.2C-14.44,67.71-.21,75.48,64.63,41.73,98.85,23.92,115.4,67.06,115.4,67.06"/>
+        <path id="lne2" class="cls-4" d="M-5.71,23.93c26.09,21,61,14,80.66-.63C99.46,5.08,115.7,17,115.7,17"/>
+        <path id="lne1" class="cls-1" d="M-8.58,28.2c2.87,37.63,50.89,11.92,89.16,0,29.4-9.16,28.82-2,28.82-2"/>
+        <g id="Mask">
+          <path class="cls-5" d="M0,50v50H50A50,50,0,0,1,0,50Z"/>
+          <path class="cls-5" d="M50,0H0V50A50,50,0,0,1,50,0Z"/>
+          <path class="cls-5" d="M50,0a50,50,0,0,1,50,50V0Z"/>
+          <path class="cls-5" d="M50,100h50V50A50,50,0,0,1,50,100Z"/>
+        </g>
+        <circle id="Border" class="cls-6" cx="50" cy="50" r="49"/>
+      </svg>
+
+    </div>
+
+
+  </body>
+</html>

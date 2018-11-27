@@ -1,0 +1,23 @@
+// #ddf279
+// #03dbe8
+
+#bot {
+  width: 100vw;
+  height: 100vh;
+}
+
+#faceStroke {
+  stroke: #03dbe8;
+  fill: #fff;
+  stroke-width: 1px;
+}
+
+#backCircle01{
+  //stroke: #03dbe8;
+  fill: #ddf279;
+  stroke-width: 1px;
+}
+
+#theFace {
+  transform: translate(-50px, -50px);
+}

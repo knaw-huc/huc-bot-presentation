@@ -3,7 +3,7 @@
   "pages": [
     {
       "name": "index",
-      "template": "basic",
+      "template": "bot",
       "title": "Focus"
     }
   ]

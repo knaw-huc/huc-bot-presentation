@@ -8,14 +8,12 @@
 
 #faceStroke {
   stroke: #03dbe8;
-  fill: #fff;
-  stroke-width: 1px;
+  fill: none;
+  stroke-width: 3px;
 }
 
 #backCircle01{
-  //stroke: #03dbe8;
-  fill: #ddf279;
-  stroke-width: 1px;
+
 }
 
 #theFace {
@@ -24,6 +22,9 @@
   height: 300px;
 }
 
+#botFaceBG{
+  fill:#ffffff;
+}
 
 .lines {
   stroke-width: 1px;

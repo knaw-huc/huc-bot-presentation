@@ -90,8 +90,8 @@ document.body.onkeyup = function(e){
     execAnimation('mouth-un-closed');
     execAnimation('eyes-open');
 
-    execAnimation('cust', 'backCircle01', 'r', 500 );
-    execAnimation('cust', 'backCircle02', 'r', 400 );
+    execAnimation('cust', 'backCircle01', 'r', 1500 );
+    execAnimation('cust', 'backCircle02', 'r', 200 );
     execAnimation('cust', 'backCircle03', 'r', 300 );
     execAnimation('cust', 'backCircle04', 'r', 600 );
 
@@ -116,13 +116,23 @@ document.body.onkeyup = function(e){
     execAnimation('mouth-un-talk02');
   }
 
+  if(e.keyCode == 16){
+    execAnimation('cust', 'backCircle01', 'r', 400 );
+    execAnimation('cust', 'backCircle02', 'r', 250 );
+    execAnimation('cust', 'backCircle03', 'r', 300 );
+    execAnimation('cust', 'backCircle04', 'r', 150 );
+    execAnimation('cust', 'backCircle05', 'r', 100 );
+    execAnimation('cust', 'backCircle06', 'r', 150 );
+    execAnimation('cust', 'backCircle07', 'r', 150 );
+    clearInterval(botDynamics);
+  }
 }
 
 
 
 var winking, botDynamics;
 winking = setInterval(eyesWink, 6400);
-botDynamics = setInterval(dynamics, 1000);
+botDynamics = setInterval(dynamics, 1500);
 
 function eyesWink() {
   execAnimation('eyes-wink');
@@ -131,9 +141,9 @@ function eyesWink() {
 }
 
 function dynamics() {
-  var elems=['backCircle01','backCircle02','backCircle03','backCircle04'];
+  var elems=['backCircle03','backCircle04','backCircle05','backCircle06','backCircle07'];
   var randElems = elems[Math.floor(Math.random() * elems.length)];
-  execAnimation('cust', randElems, 'r', getRandomNum(200, 700) );
+  execAnimation('cust', randElems, 'r', getRandomNum(200, 500) );
 }
 
 

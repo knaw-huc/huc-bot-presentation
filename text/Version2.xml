@@ -1,0 +1,51 @@
+<speak>
+<express-as type="GoodNews">
+Hi, I am your mystery guest!<break strength="medium"/> My name is Dee.<break strength="weak"/></express-as> I work for Digital Infrastructure at the Royal Netherlands Academy of Arts and Sciences <break strength="weak"/>Humanities Cluster. Like them, I'm interested in history, language, art, data, technology and how all these things come together.<break strength="x-weak"/> Let me tell you a little bit about us and what we do.
+
+<break strength="medium"/>The Humanities Cluster is the result of merging the I T<break strength="x-weak"/>teams from three institutes. We've already built a lot of tools for research. Most of these are web applications that do not yet<break strength="x-weak"/> really work together. Our primary aim now is to connect them. We want to help researchers make data selections<break strength="weak"/> that can be analysed by chains of language and image software. Extracting information and enriching the original<break strength="x-weak"/>sources. The results are then returned to scientists for further human analysis. 
+
+<break strength="medium"/>Building these connections is what turns software into infrastructure. <break strength="weak"/><express-as type="GoodNews">The magic word for that is <break strength="weak"/>'open standards'. <break strength="medium"/></express-as>And yes, that is actually two words.<break strength="medium"/> This will allow us to combine data from entirely different areas. We want to allow you to connect historical sources with other scientific fields such as archaeology and medicine. But also with cultural heritage, governments, and corporations. <break strength="medium"/>Moreover we wish to open up humanities research for use by others. <break strength="weak"/>Think for example about the media, policy makers, teachers and journalists.
+</speak>
+
+
+<speak>
+<break strength="medium"/>Researchers want to work with collections beyond the walls of their institute. They need to be able to analyse data from all over the Netherlands, from Europe, and actually across the globe. To enable their research we separate<break strength="x-weak"/> archive<break strength="x-weak"/> and research infrastructures.<break strength="x-weak"/>  Archive infrastructure needs to be sustainable, and expose only carefully curated data. Research infrastructure on the other hand, is volatile. It is dynamic and subject to change. It must be able to handle data that is not cleaned, or carefully selected. It needs to be open for experimentation. 
+
+<break strength="medium"/>Lets take a closer look at Research Infrastructure. <break strength="weak"/>We distinguish three data streams. The first handles the digital representation of reality. It contains: Images, Audio and Video. Image software, for example, can extract text, detect faces, analyse ink color, or identify typewriters.
+
+<break strength="medium"/>The second stream continues where the first one stops. It handles transcribed reality. It works not only with manually transcribed sources but more and more with automatically generated texts. Through optical character recognition, hand-written text analyses, or speech-to-text audio processing. With a transcription of varying quality available, we can start extracting linguistic elements, such as nouns, verbs, and sentence structure, as well as detect names of people, places, objects and dates.
+
+<break strength="medium"/>Detecting that a combination of letters is a noun, and likely the name of a person, is only half the job. To make sense we need to know who the name actually belongs to. To do that, we come to the third and final data stream: structured data. This is the semantic representation of reality. Large graphs of identified people, with birth date and location, and many other characteristics. We add these records to locations, objects, and events that were collected over centuries of research. Combined they form knowledge graphs and explain how people are connected, where they worked, lived, and travelled. A process called: disambiguation, identifies the name that was recognized in a transcription. It links the occurrence in a text, to the known person in the knowledge graph, and makes the entire context available to the researcher.
+
+<break strength="medium"/>Through this process, we are capable of working with 17th-century shipping records, identify the sailors on board, and follow their careers. We can follow the voyages of individual ships, books, goods, texts, and even ideas, and see where they were at different moments through the ages.
+
+<break strength="medium"/><express-as type="GoodNews"><prosody volume="x-loud"><voice-transformation type="Custom" rate="fast" strength="100%">Don’t believe us?<break strength="x-weak"/> We’ll show you.</voice-transformation></prosody></express-as>
+</speak>
+
+<speak>
+<break strength="medium"/>TRIADO is one of those projects in which a lot of technology comes together. The project is funded by the Academy’s research fund and aims to automate access to the archives of the Dutch tribunals prosecuting crimes committed in the country during World War Two. Together with the National Archives and the <express-as type="Uncertainty">Dutch Institute for War, Holocaust and Genocide Studies</express-as>, we are digitizing thirteen meters of dossiers as a pilot sample. The scans are then processed in a pipeline of image tooling <break strength="x-weak"/> that classifies documents and generates text. This transcription is handed over to language software that recognizes war criminals, partisans, witnesses, and victims, and connects them to existing databanks.
+
+<break strength="medium"/>In products such as <break strength="x-weak"/>Nayderlab and Pergamon<break strength="weak"/> we want to make every text available to a wide audience of researchers, teachers, students, and the general public. We offer platforms that place sources in their original context. These tools bring together texts from many different authors, and institutions, across time and space. They add the ability to analyse them over a long period of time, combine them with contemporary texts and in the original language. We call these virtual collections.
+
+<break strength="medium"/>Nayderlab has specific features to support these virtual collections. The platform aids the user in their search, and holds into account how context is different in different eras. <break strength="x-weak"/>For example through a method we call<break strength="weak"/> lexical query expansion. <break strength="weak"/>When the user enters a search term, the software knows that it needs to search for different words in different periods. The system helps the user in formulating a question by linking modern, early-modern, and medieval Dutch dictionaries in a network of words.
+</speak>
+
+<speak>
+<break strength="medium"/>Finally we would like to show you <break strength="weak"/>Halicarnassus. The tool allows you to come as close as possible to actual time travel.<break strength="weak"/><express-as type="GoodNews"><prosody volume="x-loud"><voice-transformation type="Custom" rate="fast" strength="100%">Sounds exciting? Let me show you.</voice-transformation></prosody></express-as>
+
+<break strength="medium"/>We extract information from sources and find occurrences of people, places, and events. We link them to known data. Such networks are called: knowledge graphs. And these also allow people to do research over time and space. Halicarnassus brings these two dimensions together.
+
+<break strength="medium"/>As an example we have taken the travels of the Dutch seafarer Ahbel Tasman. In the first half of the 17th century he was sent out twice in search of the mysterious land known as<break strength="weak"/> Terra Australis. <break strength="weak"/>From his logs, we extracted his location to linked data, and mapped his first trip. Now you can actually see where he went. 
+
+<break strength="medium"/><express-as type="GoodNews">If there was a medal for not finding Australia, Tasman would probably have won it. <break strength="weak"/>When looking at his journey, we cannot stop thinking: how can you miss it! At least he did manage to discover Tasmania, the island that still carries his name.</express-as> 
+
+<break strength="medium"/>On his second trip he eventually discovered Australia and explored large sections of the continent’s northern coast.
+</speak>
+
+<speak>
+<break strength="medium"/>These are just a couple of examples. And we are working hard to make all of our tools compatible with all the data stored in our repositories. This allows you to analyze text, extract information and follow the migration of people, objects, and ideas<break strength="x-weak"/> in any period you want. 
+
+<break strength="medium"/><express-as type="GoodNews">There's a lot for us to do. But we think its fantastic to have the opportunity to bring the humanities and sciences together.
+</express-as>
+<break strength="weak"/>We are convinced that the future of the humanities is in solid data-driven science. Connected software systems are crucial for that. Now we're taking the next step:<break strength="weak"/> away from making the humanities more digital,<break strength="weak"/> and towards making the computational sciences <break strength="medium"/>more humanist.
+</speak>

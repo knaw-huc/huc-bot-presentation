@@ -20,15 +20,15 @@
 }
 
 #backCircle03{
-  stroke: #ddf279;
+  stroke: #fff;
   fill: none;
-  stroke-width: 6px;
+  stroke-width: 1px;
 }
 
 #backCircle04 {
-  stroke: #03dbe8;
+  stroke: #fff;
   fill: none;
-  stroke-width: 10px;
+  stroke-width: 1px;
 
 }
 #backCircle05{
@@ -69,4 +69,8 @@
   stroke: #03dbe8;
   fill: #ddf279;
   stroke-width: 2px;
+}
+
+.gridDot {
+  fill: #fff;
 }

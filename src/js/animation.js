@@ -9,10 +9,10 @@ document.body.onkeyup = function(e){
     execAnimation('mouth-un-closed');
     execAnimation('eyes-open');
 
-    execAnimation('cust', 'backCircle01', 'r', 1500 );
-    execAnimation('cust', 'backCircle02', 'r', 200 );
-    execAnimation('cust', 'backCircle03', 'r', 300 );
-    execAnimation('cust', 'backCircle04', 'r', 600 );
+    // execAnimation('cust', 'backCircle01', 'r', 1500 );
+    // execAnimation('cust', 'backCircle02', 'r', 200 );
+    // execAnimation('cust', 'backCircle03', 'r', 300 );
+    // execAnimation('cust', 'backCircle04', 'r', 600 );
 
   }
   // enter
@@ -33,6 +33,12 @@ document.body.onkeyup = function(e){
   if(e.keyCode == 50){
     execAnimation('mouth-up-talk02');
     execAnimation('mouth-un-talk02');
+  }
+
+  if(e.keyCode == 51){
+    execAnimation('mouth-un-smile');
+    execAnimation('mouth-up-smile');
+    execAnimation('eyes-smile');
   }
 
   if(e.keyCode == 16){

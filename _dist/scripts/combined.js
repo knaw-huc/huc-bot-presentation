@@ -1,176 +1,123 @@
-var animationValues = [
-  {
-    "name": "eyes-wink",
-    "id": "botEyes",
-    "attribute": "d",
-    "code": "M2,179.7c10.6,42.8,130.5,75.7,130.5,75.7c12.4,5.8,22.3,6.4,38.7,4.7c0,0,30.8,8.3,69.8-0.3c14.8,1.4,26.3,1.1,38.6-4.4c38.8-4.8,91.4-28,122.4-77.7"
-  },
-  {
-    "name": "eyes-open",
-    "id": "botEyes",
-    "attribute": "d",
-    "code": "M2,179.7c10.6,42.8,130.5,75.7,130.5,75.7c7.7-29.1,43.1-12.9,38.7,4.7c0,0,30.8,8.3,69.8-0.3c-0.6-22.3,29.8-26.4,38.6-4.4c38.8-4.8,91.4-28,122.4-77.7"
-  },
-  {
-    "name": "eyes-shoosh",
-    "id": "botEyes",
-    "attribute": "d",
-    "code": "M2,180c-13.9,25.7-52.6,21-52.6,21c7.7-29.1,43.1-12.9,38.7,4.7c0,0,87.1-69,239.8,54.3C371,362.4,438,98.8,446.8,120.8C485.6,116,392,198.6,402,178"
-  },
-  {
-    "name": "c1big",
-    "id": "backCircle01",
-    "attribute": "r",
-    "code": 500
-  },
-  {
-    "name": "c2big",
-    "id": "backCircle02",
-    "attribute": "r",
-    "code": 400
-  },
-  {
-    "name": "mouth-up-swoosh",
-    "id": "botUpperLip",
-    "attribute": "d",
-    "code": 'M-0.3,221.9c-2.6,14.3,26.1,17.6,33.6,17.7c51.4,0.5,89.2,72,145.4,93.3c65.6,24.9,119.6,23.8,166.3-17c31.3-27.3,41.7-47.1,54.5-96'
-  },
-  {
-    "name": "mouth-un-swoosh",
-    "id": "botUnderLip",
-    "attribute": "d",
-    "code": 'M-0.3,221.9c-2.6,14.3,26.1,17.6,33.6,17.7c51.4,0.5,89.2,72,145.4,93.3c65.6,24.9,119.6,23.8,166.3-17c31.3-27.3,41.7-47.1,54.5-96'
-  },
-  {
-    "name": "mouth-up-closed",
-    "id": "botUpperLip",
-    "attribute": "d",
-    "code": 'M0.1,221.5C10.4,266.8,65.6,329.8,164,342.9c12,1.6,24.7,2.5,38,2.5c13.5,0,26.5-1.1,38.9-3.1c86.9-14.1,146.2-73.8,159-122.6'
-  },
-  {
-    "name": "mouth-un-closed",
-    "id": "botUnderLip",
-    "attribute": "d",
-    "code": 'M0.1,221.5C10.4,266.8,65.6,329.8,164,342.9c12,1.6,24.7,2.5,38,2.5c13.5,0,26.5-1.1,38.9-3.1c86.9-14.1,146.2-73.8,159-122.6'
-  },
-  {
-    "name": "mouth-up-talk01",
-    "id": "botUpperLip",
-    "attribute": "d",
-    "code": 'M0.1,221.5C10.4,266.8,65.6,329.8,164,342.9c12,1.6,24.7-7.1,38-7.1c13.5,0,26.5,8.5,38.9,6.5c86.9-14.1,146.2-73.8,159-122.6'
-  },
-  {
-    "name": "mouth-un-talk01",
-    "id": "botUnderLip",
-    "attribute": "d",
-    "code": 'M0.1,221.4C10.4,266.7,65.6,329.6,164,342.8c12,1.6,24.7,9.4,38,9.4c13.5,0,26.5-8,38.9-10c86.9-14.1,146.2-73.8,159-122.6'
-  },
-  {
-    "name": "mouth-up-talk02",
-    "id": "botUpperLip",
-    "attribute": "d",
-    "code": 'M-0.9,221.5c10.3,45.3,51.2,108.2,149.6,121.4c12,1.6,40-14.5,53.3-14.5c13.5,0,38.3,15.9,50.7,13.9c86.9-14.1,133.4-73.8,146.2-122.6'
-  },
-  {
-    "name": "mouth-un-talk02",
-    "id": "botUnderLip",
-    "attribute": "d",
-    "code": 'M-0.9,221.4c10.3,45.3,51.2,108.2,149.6,121.4c12,1.6,23.2,21.8,53.3,21.8c26.5,0,38.3-20.5,50.7-22.5c86.9-14.1,133.4-73.8,146.2-122.6'
-  }
-];
+// SET Init vals
+// var stepsStart = 7;
+// var stepsAdd = 8;
+// var rings = 30;
+// var spaceBetween = 30;
+
+var itemsPosition= '';
+var coors = new Array(1);
+var centerX = 0;
+var centerY = 0;
 
 
+function genCircleCoors() {
+var counter = 0;
+steps = stepsStart;
+  //  for every ring
+  for (var j = 0; j < rings; j++) {
+    ringRadius = (j+1)*spaceBetween;
 
-document.body.onkeyup = function(e){
-  //spatie
-  if(e.keyCode == 32){
-    //execAnimation('c1big');
-    //execAnimation('c2big');
-    execAnimation('mouth-up-closed');
-    execAnimation('mouth-un-closed');
-    execAnimation('eyes-open');
+    coors[counter]=new Array(2);
+    coors[counter][0] = 0;
+    coors[counter][1] = 0-ringRadius;
+    counter++;
+    for (var i = 1; i < steps; i++) {
 
-    execAnimation('cust', 'backCircle01', 'r', 1500 );
-    execAnimation('cust', 'backCircle02', 'r', 200 );
-    execAnimation('cust', 'backCircle03', 'r', 300 );
-    execAnimation('cust', 'backCircle04', 'r', 600 );
-
-  }
-  // enter
-  if(e.keyCode == 13){
-    execAnimation('mouth-up-closed');
-    execAnimation('mouth-un-closed');
-
-  }
-  if(e.keyCode == 48){
-    execAnimation('mouth-up-swoosh');
-    execAnimation('mouth-un-swoosh');
-    execAnimation('eyes-shoosh');
-  }
-  if(e.keyCode == 49){
-    execAnimation('mouth-up-talk01');
-    execAnimation('mouth-un-talk01');
-  }
-  if(e.keyCode == 50){
-    execAnimation('mouth-up-talk02');
-    execAnimation('mouth-un-talk02');
-  }
-
-  if(e.keyCode == 16){
-    execAnimation('cust', 'backCircle01', 'r', 400 );
-    execAnimation('cust', 'backCircle02', 'r', 250 );
-    execAnimation('cust', 'backCircle03', 'r', 300 );
-    execAnimation('cust', 'backCircle04', 'r', 150 );
-    execAnimation('cust', 'backCircle05', 'r', 100 );
-    execAnimation('cust', 'backCircle06', 'r', 150 );
-    execAnimation('cust', 'backCircle07', 'r', 150 );
-    clearInterval(botDynamics);
-  }
+      coors[counter]=new Array(2);
+      coors[counter][0] = (centerX + ringRadius * Math.cos(Math.PI * i / steps*2-Math.PI/2));
+      coors[counter][1] = (centerY + ringRadius * Math.sin(Math.PI * i / steps*2-Math.PI/2));
+      counter++;
+    }
+    steps = steps+stepsAdd;
+    //perRingAmountArray.push(counter);
+   }
 }
 
+genCircleCoors();
+//console.log(coors);
+
+var genSvgStart = '<svg width="100%" height="90%">';
+var genSvgEnd = '</svg>';
+var genSvgbody = '';
+
+var useGroups = false;
 
 
-var winking, botDynamics;
-winking = setInterval(eyesWink, 6400);
-botDynamics = setInterval(dynamics, 1500);
 
-function eyesWink() {
-  execAnimation('eyes-wink');
-  var wink;
-  wink = setTimeout(execAnimation, 100, 'eyes-open');
-}
 
-function dynamics() {
-  var elems=['backCircle03','backCircle04','backCircle05','backCircle06','backCircle07'];
-  var randElems = elems[Math.floor(Math.random() * elems.length)];
-  execAnimation('cust', randElems, 'r', getRandomNum(200, 500) );
+// build the grid
+
+for (var c = 0; c < coors.length; c++) {
+
+    genSvgbody = genSvgbody+'<circle cx="50%" cy="50%" r="'+radius+'" class="gridDot" id="gridDot'+c+'" />';
 }
 
 
 
 
 
+// injest grid svg in to html
+var genSvg =genSvgbody;
+var svgContent = document.getElementById('bot').innerHTML;
+document.getElementById('bot').innerHTML = genSvg+svgContent;
 
 
+//function to change item position
+function gridItemPos(idName, itemId, x, y, scale) {
+console.log(idName);
+console.log(itemId);
+  document.getElementById(idName+itemId).style.transform = 'translate('+x+'px,'+y+'px) scale('+scale+','+scale+')';
+}
+
+function coordinateItems(idName) {
 
 
-// get data
-function execAnimation(animationName, id, attr, code) {
+  for(var i = 0; i < coors.length; i++){
+    var x= coors[i][0];
+    var y= coors[i][1];
 
-  if (animationName == 'cust') {
-    document.getElementById(id).setAttribute(attr, code);
-  }
-  else {
-    for (var i = 0; i < animationValues.length; i++){
-      if (animationValues[i].name == animationName){
-        document.getElementById(animationValues[i].id).setAttribute(animationValues[i].attribute, animationValues[i].code);
-      }
+    if(itemsPosition == 'absolute') {
+      //asuming the image is 100x100
+
+      x = x-(300/2);
+      y = y-(300/2);
     }
 
+    gridItemPos(idName, i, x, y, 1);
   }
-
 }
 
-function getRandomNum(min, max) {
-    return Math.random() * (max - min) + min;
+coordinateItems('gridDot');
+
+function shapeTween(number) {
+  coors = shuffleArray(coorsArr[number]);
+  randomCoors('near', 0);
+  coordinateItems('gridDot');
+}
+
+var colors=['#ddf279', '#79f2bc', '#58e6c8', '#79e7f2', '#c4f279'];
+
+function manDots() {
+  for (i = 0; i < 100000; i++) {
+    (function(i) {
+      setTimeout(function () {
+        var maxVal = coors.length
+        var j = randomInt(0,maxVal)
+        //document.getElementById('gridDot'+j).style.fill=colors[Math.floor(Math.random() * colors.length)];
+        //document.getElementById('gridDot'+j).style.transform = 'scale(1,1)';
+      }, 1 * i);
+    })(i);
+  };
+}
+
+setTimeout (manDots, 1000);
+
+// randon number
+function randomInt(min,max) {
+  min= min*10;
+  max=max*10;
+  var rand = (Math.floor(Math.random()*(max-min+1)+min)/10);
+
+    return rand;
+
 }

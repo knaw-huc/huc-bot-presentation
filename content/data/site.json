@@ -5,6 +5,11 @@
       "name": "index",
       "template": "bot",
       "title": "Focus"
+    },
+    {
+      "name": "index2",
+      "template": "dot",
+      "title": "Focus"
     }
   ]
   }
